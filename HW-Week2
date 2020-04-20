@@ -12,4 +12,10 @@ if (numberOfToppings <= 10) {
   console.log("A whole lot of pizza.");
 }
 
-for (let i = 1; i <= 10; i++);
+numberOfToppings = 10;
+for (let i = 1; i <= 10; i++) {
+  total = numberOfToppings + i
+}
+ {
+  console.log(numberOfToppings)
+}
