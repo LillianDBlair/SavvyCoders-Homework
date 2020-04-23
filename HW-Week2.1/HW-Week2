@@ -1,0 +1,22 @@
+const pizzaPlace = "Imos";
+
+let numberOfToppings = 25;
+
+console.log("typeOf pizzaPlace", typeOf pizzaPlace);
+console.log(numberOfToppings, typeOf numberOfToppings);
+
+console.log(`"My favorite restaurant is ${pizzaPlace}, they at least have ${numberOfToppings}, toppings to choose from!"`);
+
+if (numberOfToppings < 10) {
+  console.log("Quality, not quantity");
+} else {
+  console.log("A whole lot of pizza.");
+}
+
+numberOfToppings = 10;
+for (let i = 1; i <= numberOfToppings; i++) {
+  if (i % 2 === 0) {
+    console.log(i)
+  }
+}
+
