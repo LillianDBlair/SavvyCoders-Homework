@@ -1,0 +1,16 @@
+   // This is an array
+const pizzaToppings = ["sausage", "pineapple", "green peppers", "onions"];
+
+function greetCustomer() {
+   // prints a message
+   let greeting = `Welcome to The Pizza House, our toppings are: `;
+   // looping over toppings
+for (let topping of pizzaToppings){
+   // adding toppings to end of sentence
+   greeting += `${topping}, `;
+}
+console.log(greeting);
+}
+
+
+function getPizzaOrder =
