@@ -3,14 +3,51 @@ const pizzaToppings = ["sausage", "pineapple", "green peppers", "onions"];
 
 function greetCustomer() {
    // prints a message
-   let greeting = `Welcome to The Pizza House, our toppings are: `;
-   // looping over toppings
-for (let topping of pizzaToppings){
+let greeting = `Welcome to The Pizza House, our toppings are: `;
+// looping over toppings
+for (let topping of pizzaToppings) {
    // adding toppings to end of sentence
    greeting += `${topping}, `;
 }
 console.log(greeting);
 }
 
+getPizzaOrder(size, crust, ...toppings){
+   // accepts size and crust
+   let order = `One ${size} ${crust} crust pizza with `;
+   // inputs an indefinite amount of toppings
+   for (let topping of toppings) {
+      order += `${topping}, `;
+   }
+   // prints the order
+   console.log(`${order}coming up!`);
+   // out puts a list
+   return [size, crust, toppings];
+}
+   // accepts an array with three items
+function preparePizza([size, crust, toppings]) {
+   // prints statement
+   console.log("...your pizza is cooking...");
+   // outputs a pizza object with key-value pairs
+   return {
+      size: crust,
+      crust: crust,
+      topping: toppings,
+   };
+}
 
+   //function accepts pizza object
+function servePizza(pizza) {
+   // logs a message the pizza is ready and repeats the order
+   let orderReady = `Order up! Here's your ${pizz.size} ${pizza.crust} ${pizza.toppings}`;
+      for (let topping of pizza.toppings) {
+      orderReady += `${toppings}, `;
+   }
+   console.log(`${orderReady}Enjoy!`);
+   //outputs objet that was passed in
+   return pizza;
+}
+
+greetCustomer();
+servePizza(preparePizza(getPizzaOrder("small", "thin", "pineapple", "sausage")));
 
